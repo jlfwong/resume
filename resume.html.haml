@@ -1,7 +1,7 @@
 !!! Strict
 %html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
   %head
-    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
     %title Jamie Wong
     %style
       :sass
@@ -52,7 +52,8 @@
           body
             font-size: 9pt
         
-          #begin_page_two 
+          .page_break
+            display: none
             page-break-before: always
         
         @media screen
@@ -109,6 +110,9 @@
           margin-left: 5em
           li
             margin-left: 2em
+
+        code
+          font-size: 9pt
         
         tfoot
           height: 4pt
@@ -144,68 +148,28 @@
           %td.left &nbsp;
           %td.center Email for other contact info
           %td.right &nbsp;
-
-    :markdown
-      Summary of Qualifications
-      -------------------------
-
-      ### Languages
-        * C99 and C++: 3 years of experience through course work, personal projects, and competitions
-          * Example: Graphical animation of Towers of Hanoi
-        * php: 6 years of experience through personal projects and competition
-          * Example: Image to ASCII art conversion through a web interface
-        * Python: 2 years of experience through personal projects and competition
-          * Example: Animated GIF lexicon of Conway's Game of Life
-        * JavaScript (jQuery, Prototype): 6 years of experience through personal projects
-          * Example: jQuery plugin for elegant DOM generation
-        * AutoIt v3: 3 years of experience through personal projects
-          * Example: Automated solvers to various word games
-        * Ruby (Ruby on Rails): 4 months full-time workplace experience, personal projects
-          * Example: Converting an internal CMS to be Rails 3 compliant
-        * Experienced with Regular Expressions, MySQL, AJAX, JSON, HTML, and CSS
-        * Current working towards learning Actionscript 3
-
-      ### Tools and Software
-        * Very comfortable with using the command line in all major operating systems
-        * Editing: predominately Vim, experience with Dev C++, Eclipse, SciTE
-        * Operating Systems: Mac OS X, Linux, Windows
-        * Source Control: git, svn
-        * Currently working towards learning GNU make, rake
-
-      ### Other Skills
-        * Passionate about learning - vast majority of technical knowledge was self taught out of interest
-        * Teaching: developed while explaining technical concepts at Virtual Ventures Science and Technology Summer Camp to groups of 10 to 40 people
-
-
-      Education
-      ---------
-
-      ### Candidate for Bachelor of Software Engineering
-        * Honours Software Engineering, University of Waterloo, Ontario, September 2009 - Present
-        * Relevant Assignments:
-          * Lego Mindstorms Path Following Robot - SE 101
-            * Programmed a Lego Mindstorms RCX to navigate a map using input from light sensors
-            * Worked in a group of five to generate source controlled code using subversion
-            * Coded in Not Quite C (NQC) - a C like language designed for use with Lego Mindstorms
-          * Scribbler Robot Demo - SE 101
-            * Developed a demonstration of the Scribbler robot using Python
-            * Demonstrated ability of robot to write words when provided with a marker
-            * Verified that instructions for letters were right by using Python Imaging Library (PIL)
-
-      ### Ontario Secondary School Diploma
-        * Lisgar Collegiate Institute, Ottawa, ON, September 2005 - June 2009
-
-    #begin_page_two
+    -# TODO
+      * Update SO stats
+      * Add github
+      * Add links
+      * Personal projects?
 
     :markdown
       Work Experience
       ---------------
 
+      ### Software Development Intern
+      #### Kontagent, Toronto, ON, January - April 2011
+        * Led a large scale refactor effort
+        * Recommended and performed the creation of technical documentation, best practices and a style guide
+        * Dramatically improved automated testing for the client-facing Django project
+        * Tools/Frameworks used: Django 1.1 and 1.2, jQuery, HTML, CSS, svn
+
       ###  Web Developer
       #### The Working Group, Toronto, ON, May - August 2010  
         * Project lead on Campus Perks contest system - see campusperks.ca
         * Interacted directly with clients, obtaining specification and recommending improvements
-        * Skills/Frameworks used: Rails 2.x and 3.0, jQuery, Prototype, HTML, CSS, git, svn
+        * Tools/Frameworks used: Rails 2.x and 3.0, jQuery, Prototype, HTML (haml), CSS (sass), git, svn
 
       ### Camp Instructor
       #### Virtual Ventures Summer Camp, Ottawa, ON, Summers of 2007-2009  
@@ -215,12 +179,52 @@
         * Created AJAX powered camper sign in/out system used by camp instructors throughout summer 2009
 
 
+      Summary of Qualifications
+      -------------------------
+
+      ### Languages
+      #### In rough order of proficiency
+        * JavaScript (jQuery, Prototype, Backbone): 8 months workplace experience, personal projects
+          * Learned about `this`, `.prototype` and `apply` making a jQuery plugin for elegant DOM generation
+
+        * Python (Django): 4 months workplace experience, personal projects, and competition
+          * Learned to love docstrings, list comprehensions and pylint making a 2v2 Starcraft 2 Tournament Ladder viewer
+
+        * Coffeescript: personal projects
+          * Learned to stop worrying about parens and `this` making LL1 and SLR1 parsers for propositional logic
+
+        * Ruby (Ruby on Rails): 4 months workplace experience, personal projects
+          * Learned to love haml and sass while learning converting an internal CMS to be Rails 3 compliant
+
+        * php: Personal projects and competition
+          * Learned to fear the evil that is `$$` making a web-based Image to ASCII art converter 
+
+        * C99 and C++: Course work, personal projects, and competitions
+          * Learned to grok pointers making a graphical animation of Towers of Hanoi
+
+        * MIPS and Coldfire 68k assembly: Course work
+          * Learned to appreciate stack frames making a calculator for a 68k Coldfire board.
+
+        * Experienced with Regular Expressions, MySQL, AJAX, JSON, (semantically correct) HTML, and CSS
+        * Current working towards learning Haskell
+
+      ### Tools and Software
+        * Editing: predominately Vim, experience with Dev C++, Eclipse, SciTE
+        * Source Control: git, svn
+        * Build Systems: GNU make, rake
+
+      ### Other Assets
+        * Strong advocate of test driven development - untested code is broken code
+        * Strong advocate of code review - unreviewed code is bad code
+        * Passionate about learning - vast majority of technical knowledge was self taught out of interest
+        * Teaching: developed while explaining technical concepts at Virtual Ventures Science and Technology Summer Camp to groups of 10 to 40 people
+
       Extracurricular
       ---------------
 
       ### Avid Stack Overflow Contributor
       #### stackoverflow.com (username: Jamie Wong), March 29, 2010 - Present  
-        * Predominately answering questions about Javascript, Ruby on Rails, and php
+        * Predominately answering questions about JavaScript, Ruby on Rails, and php
         * 181 answers (65 accepted) as of Sept. 13, 2010
 
       ### ACM International Collegiate Programming Contest (ACM ICPC) Competitor
@@ -230,29 +234,12 @@
         * Debugged code and designed test cases on the fly during competition
         * 13th place finish out of 113 teams in East Central North America
 
-      ### Facilities Representative
-      #### University of Waterloo Class of 2014 Software Engineers, September 2009 - Present
-        * Ensure that facilities owned by the Software Engineering department are maintained in a usable state
-        * Set up a virtual private server for class to provide remote shell access, web space and MySQL database access
-        * Elected by Class of 2014 Software Engineers
+    .page_break
 
+    :markdown
 
       Awards
       ------
-
-      ### Academic Awards
-        * Term Dean's Honour List, University of Waterloo, Fall 2009 and Winter 2010
-          * Awarded to students in excellent academic standing (combination of GPA and percentile rank from the top)
-        * Software Engineering Entrance Scholarship, University of Waterloo, September 2009
-          * Awarded to students of academic excellence entering the Software Engineering program
-        * President's Scholarship of Distinction, University of Waterloo, September 2009
-          * Achieved above 95% Grade 12 average
-        * Student's Council Physics Prize, Lisgar Collegiate Institute, June 2009
-          * Highest final grade in Grade 12 Physics
-        * The Jerry Dermer Memorial Prize in Engineering, Lisgar Collegiate Institute, June 2009
-          * Awarded to the student with the highest academic standing pursuing engineering
-        * William Aird Ross Scholarship for Grade 12 Math, Lisgar Collegiate Institute, June 2009
-          * Highest combined average for Advanced Functions, Calculus and Vectors, and Statistics
 
       ### Competition
         * Google Code Jam Online Round 2 Qualifier, 2009 and 2010 (username: phleet)
@@ -263,7 +250,38 @@
         * Best User Interface in Show, Algonquin SAT Programming Olympics, May 2008 and 2009
 
 
-      Interests
+      ### Academic Awards
+        * Term Dean's Honour List, University of Waterloo, Fall 2009 and Winter 2010
+          * Awarded to students in excellent academic standing (combination of GPA and percentile rank from the top)
+
+        * Software Engineering Entrance Scholarship, University of Waterloo, September 2009
+          * Awarded to students of academic excellence entering the Software Engineering program
+
+        * President's Scholarship of Distinction, University of Waterloo, September 2009
+          * Achieved above 95% Grade 12 average
+
+        * Student's Council Physics Prize, Lisgar Collegiate Institute, June 2009
+          * Highest final grade in Grade 12 Physics
+
+        * The Jerry Dermer Memorial Prize in Engineering, Lisgar Collegiate Institute, June 2009
+          * Awarded to the student with the highest academic standing pursuing engineering
+
+        * William Aird Ross Scholarship for Grade 12 Math, Lisgar Collegiate Institute, June 2009
+          * Highest combined average for Advanced Functions, Calculus and Vectors, and Statistics
+
+      Education
       ---------
 
+      ### Candidate for Bachelor of Software Engineering
+        * Honours Software Engineering, University of Waterloo, Ontario, September 2009 - Present
+        * Relevant Assignments:
+          * Built a calculator in Coldfire 68k assembly - ECE 222
+          * Wrote a compiler from a subset of C to MIPS in C++ - CS 241
+          * Created playable 1 dimensional pong in VHDL - SE 141
+
+      ### Ontario Secondary School Diploma
+        * Lisgar Collegiate Institute, Ottawa, ON, September 2005 - June 2009
+
+      Interests
+      ---------
         * Badminton, Dance (Popping), Puzzles, Information Security
