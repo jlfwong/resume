@@ -1,6 +1,10 @@
 haml/markdown resume
 ====================
 
+While you're free to use this as a template and fill in content, please do not copy the entire structure of the content - namely, please do not copy the 'Learned to love...' section in the "Languages" section.
+
+Remember that it's what makes your resume unique that gets you noticed - please do me the service of letting me keep mine unique.
+
 See [resume.html.haml][] for relevant source.
 See [Jamie Wong's resume][] for an example.
 

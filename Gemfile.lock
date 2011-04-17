@@ -3,9 +3,6 @@ GEM
   specs:
     bluecloth (2.1.0)
     haml (3.0.25)
-    trollop (1.16.2)
-    wkpdf (0.4.2)
-      trollop (>= 1.16.2)
 
 PLATFORMS
   ruby
@@ -13,4 +10,3 @@ PLATFORMS
 DEPENDENCIES
   bluecloth
   haml
-  wkpdf

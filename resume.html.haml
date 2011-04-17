@@ -51,6 +51,8 @@
         @media print
           body
             font-size: 9pt
+            a
+              border: none
         
           .page_break
             display: none
@@ -117,6 +119,14 @@
         tfoot
           height: 4pt
 
+        a
+          color: black
+          text-decoration: none
+          border-bottom: 1px #666 dotted
+          &:hover
+            color: #666
+            border-bottom: none
+
   %body
     .header
       :markdown
@@ -149,9 +159,7 @@
           %td.center Email for other contact info
           %td.right &nbsp;
     -# TODO
-      * Update SO stats
       * Add github
-      * Add links
       * Personal projects?
 
     :markdown
@@ -159,24 +167,30 @@
       ---------------
 
       ### Software Development Intern
-      #### Kontagent, Toronto, ON, January - April 2011
+      #### [Kontagent][], Toronto, ON, January - April 2011
         * Led a large scale refactor effort
         * Recommended and performed the creation of technical documentation, best practices and a style guide
         * Dramatically improved automated testing for the client-facing Django project
         * Tools/Frameworks used: Django 1.1 and 1.2, jQuery, HTML, CSS, svn
 
+      [Kontagent]: http://kontagent.com
+
       ###  Web Developer
-      #### The Working Group, Toronto, ON, May - August 2010  
-        * Project lead on Campus Perks contest system - see campusperks.ca
+      #### [The Working Group][], Toronto, ON, May - August 2010  
+        * Project lead on Campus Perks contest system - see [campusperks.ca][Campus Perks]
         * Interacted directly with clients, obtaining specification and recommending improvements
         * Tools/Frameworks used: Rails 2.x and 3.0, jQuery, Prototype, HTML (haml), CSS (sass), git, svn
 
+      [The Working Group]: http://twg.ca
+
       ### Camp Instructor
-      #### Virtual Ventures Summer Camp, Ottawa, ON, Summers of 2007-2009  
+      #### [Virtual Ventures Summer Camp][], Ottawa, ON, Summers of 2007-2009  
         * Designed original lesson plans to educate campers aged 10-15 about graphic design, computer science and information security
         * Taught groups of up to 40 campers about HTML, CSS and webpage creation through SSH and SCP
         * Created online registration system in php and MySQL serving hundreds of parents
         * Created AJAX powered camper sign in/out system used by camp instructors throughout summer 2009
+
+      [Virtual Ventures Summer Camp]: http://virtualventures.ca
 
 
       Summary of Qualifications
@@ -184,20 +198,20 @@
 
       ### Languages
       #### In rough order of proficiency
-        * JavaScript (jQuery, Prototype, Backbone): 8 months workplace experience, personal projects
-          * Learned about `this`, `.prototype` and `apply` making a jQuery plugin for elegant DOM generation
-
+        * JavaScript (jQuery, Prototype, Backbone.js): 8 months workplace experience, personal projects
+          * Learned about `this`, `.prototype` and `apply` making a [jQuery plugin for elegant DOM generation][JSONimal]
+          
         * Python (Django): 4 months workplace experience, personal projects, and competition
-          * Learned to love docstrings, list comprehensions and pylint making a 2v2 Starcraft 2 Tournament Ladder viewer
+          * Learned to love docstrings, list comprehensions and pylint making a [2v2 Starcraft 2 Tournament Ladder viewer][SC2 Tournament Manager]
 
-        * Coffeescript: personal projects
-          * Learned to stop worrying about parens and `this` making LL1 and SLR1 parsers for propositional logic
+        * Coffeescript: Personal projects
+          * Learned to stop worrying about parens and `this` making [LL1 and SLR1 parsers for propositional logic][Propositional Logic Parser]
 
         * Ruby (Ruby on Rails): 4 months workplace experience, personal projects
-          * Learned to love haml and sass while learning converting an internal CMS to be Rails 3 compliant
+          * Learned to love haml and sass while building a contest platform for [Campus Perks][]
 
         * php: Personal projects and competition
-          * Learned to fear the evil that is `$$` making a web-based Image to ASCII art converter 
+          * Learned to fear the evil that is `$$` making a [command line client for navigating UW Course files][UWAngel-CLI]
 
         * C99 and C++: Course work, personal projects, and competitions
           * Learned to grok pointers making a graphical animation of Towers of Hanoi
@@ -207,6 +221,12 @@
 
         * Experienced with Regular Expressions, MySQL, AJAX, JSON, (semantically correct) HTML, and CSS
         * Current working towards learning Haskell
+
+      [JSONimal]: https://github.com/phleet/jsonimal
+      [SC2 Tournament Manager]: https://github.com/phleet/sc2_tournament_manager
+      [Propositional Logic Parser]: https://github.com/phleet/Propositional-Logic-Parser
+      [Campus Perks]: http://campusperks.ca
+      [UWANgel-CLI]: https://github.com/phleet/UWAngel-CLI/tree/master/php
 
       ### Tools and Software
         * Editing: predominately Vim, experience with Dev C++, Eclipse, SciTE
