@@ -49,7 +49,15 @@
       
       @media print {
         body a {
-          border: none; } }
+          border: none; }
+      
+        body h1 {
+          color: black; } }
+      
+      @media screen {
+        .container {
+          padding-top: 25px;
+          padding-bottom: 25px; } }
       
       .page_break {
         page-break-before: always; }
@@ -59,8 +67,9 @@
         font-size: 10pt; }
       
       h1 {
-        font-size: 18pt;
-        font-weight: bold; }
+        font-size: 27pt;
+        font-weight: bold;
+        color: #777777; }
       
       .header {
         text-align: center; }
@@ -134,9 +143,6 @@
     <div class='container'>
       <div class='header'>
         <h1>Jamie Wong</h1>
-        <span>2B Software Engineering</span>
-        <br />
-        <span>20342440</span>
       </div>
       <table class='info_table'>
         <thead>
@@ -155,19 +161,17 @@
         </tfoot>
         <tbody>
           <tr>
-            <td class='left'>&nbsp;</td>
-            <td class='center'>www.jamie-wong.com</td>
-            <td class='right'>&nbsp;</td>
-          </tr>
-          <tr>
-            <td class='left'>&nbsp;</td>
-            <td class='center'>jamie.lf.wong@gmail.com</td>
-            <td class='right'>&nbsp;</td>
-          </tr>
-          <tr>
-            <td class='left'>&nbsp;</td>
-            <td class='center'>Email for other contact info</td>
-            <td class='right'>&nbsp;</td>
+            <td class='left'>
+              <a href='http://github.com/phleet'>
+                github.com/phleet
+              </a>
+            </td>
+            <td class='center'>
+              <a href='http://www.jamie-wong.com'>
+                www.jamie-wong.com
+              </a>
+            </td>
+            <td class='right'>jamie.lf.wong@gmail.com</td>
           </tr>
         </tbody>
       </table>
@@ -274,9 +278,7 @@
       <li>Source Control: git, svn</li>
       <li>Build Systems: GNU make, rake</li>
       </ul>
-    </div>
-    <div class='page_break'></div>
-    <div class='container'>
+      <div class='page_break'></div>
       <h2>Extracurricular</h2>
       
       <h3>Avid Stack Overflow Contributor</h3>

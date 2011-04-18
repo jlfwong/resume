@@ -53,6 +53,15 @@
             a
               border: none
 
+          body
+            h1 
+              color: black
+
+        @media screen
+          .container
+            padding-top: 25px
+            padding-bottom: 25px
+
         .page_break
           page-break-before: always
         
@@ -61,8 +70,9 @@
           font-size: 10pt
         
         h1
-          font-size: 18pt
+          font-size: 27pt
           font-weight: bold
+          color: #777
 
         .header
           text-align: center 
@@ -136,9 +146,6 @@
     .container
       .header
         %h1 Jamie Wong
-        %span 2B Software Engineering  
-        %br
-        %span 20342440
 
       %table.info_table
         %thead
@@ -153,27 +160,17 @@
               &nbsp;
         %tbody
           %tr
-            %td.left &nbsp;
-            %td.center www.jamie-wong.com
-            %td.right &nbsp;
-          %tr
-            %td.left &nbsp;
-            %td.center jamie.lf.wong@gmail.com
-            %td.right &nbsp;
-          %tr
-            %td.left &nbsp;
-            %td.center Email for other contact info
-            %td.right &nbsp;
+            %td.left
+              %a{:href => 'http://github.com/phleet'}
+                github.com/phleet
+            %td.center 
+              %a{:href => 'http://www.jamie-wong.com'}
+                www.jamie-wong.com
+            %td.right jamie.lf.wong@gmail.com
+
       -# TODO
-        * Add github
         * Personal projects?
         * Link to video
-
-      -#
-        * Strong advocate of test driven development - untested code is broken code
-        * Strong advocate of code review - unreviewed code is bad code
-        * Passionate about learning - vast majority of technical knowledge was self taught out of interest
-        * Teaching: developed while explaining technical concepts at Virtual Ventures Science and Technology Summer Camp to groups of 10 to 40 people
 
 
       %p.summary
@@ -253,9 +250,8 @@
           * Source Control: git, svn
           * Build Systems: GNU make, rake
 
-    .page_break
+      .page_break
 
-    .container
       :markdown
 
         Extracurricular
