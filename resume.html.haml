@@ -131,7 +131,7 @@
             color: #666
             border-bottom: none
 
-        p.summary
+        .summary p
           margin: 0 1em 1em 1em
           margin-bottom: 1em
           font-size: 10pt
@@ -173,12 +173,18 @@
         * Link to video
 
 
-      %p.summary
-        My name is Jamie Wong and I like to build things. Coding personal projects since the 7th grade has given me a great appreciation for
-        perpetual self-learning through doing. I'm a huge advocate of open source, test driven development (untested code is broken code) and
-        code review (unreviewed code is bad code). I have a fascination with puzzles and problem solving that both led me to success in
-        national and international competition and fostered my passion in programming. When I'm not pushing the latest commits to my projects on github, 
-        I can be found answering questions on Stack Overflow, writing up posts for my blog, or playing badminton.
+      .summary
+        :markdown
+          My name is Jamie Wong and I like to build things. Coding personal projects since the 7th grade has given me a
+          great appreciation for perpetual self-learning through doing. I'm a huge advocate of open source, test driven
+          development (untested code is broken code) and code review (unreviewed code is bad code). I have a fascination
+          with puzzles and problem solving that both led me to success in national and international competition and
+          fostered my passion in programming. When I'm not pushing the latest commits to my projects on [github][], I can be
+          found answering questions on [Stack Overflow], writing up posts for [my blog], or playing badminton.
+
+          [github]: http://github.com/phleet
+          [Stack Overflow]: http://stackoverflow.com/users/303911/jamie-wong
+          [my blog]: http://jamie-wong.com
 
       :markdown
         Work Experience
@@ -186,16 +192,19 @@
 
         ### Software Developer at [Kontagent][], January - April 2011
         #### Leading social analytics company tracking 600M+ events from 20M+ daily active users, funded by Facebook
-          * Led a large scale refactor effort to identify problem areas, restructure code and destroy dead or legacy code
+          * Led a self-initiated, large scale refactor effort on the entire customer-facing component of the SaaS product
+            with minimal supervision. Identified problem areas, made major architectural changes to existing code,
+            destroyed dead and legacy code, and pushed the improved code to production
           * Authored baseline company-wide engineering documentation, JavaScript and Python style guides and best practices
-          * Improved test coverage by 20% for the client-facing Django project
+          * Improved python test coverage from 0% to 40% for the large portions of the code base I was responsible for
+          * Developed a tool to dramatically increase support staff efficiency by providing rapid access to the customer's view
           * Tools/Frameworks used: Django 1.1 and 1.2, jQuery, HTML, CSS, svn
 
         [Kontagent]: http://kontagent.com
 
         ### Web Developer at [The Working Group][], May - August 2010
-        #### Ruby on Rails web development firm with a focus on client satisfaction and development process
-          * Project lead on Campus Perks contest system - see [campusperks.ca][Campus Perks]
+        #### Ruby on Rails web development shop with a focus on entrepreneurship and agile development practices.
+          * Project lead on Campus Perks' web-based contest system, which received over 500,000 page views. Used by RIM, Microsoft, Loblaws and others to create integrated social media campaigns - see [campusperks.ca][Campus Perks]
           * Interacted directly with clients, obtaining specification and recommending improvements
           * Tools/Frameworks used: Rails 2.x and 3.0, jQuery, Prototype, HTML (haml), CSS (sass), git, svn
 
