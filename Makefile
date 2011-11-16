@@ -6,4 +6,4 @@ resume.html: resume.html.haml
 	cat $< | haml >> $@
 
 publish: resume.html
-	scp $< dreamhost:jamie-wong.com/ 
+	scp $< ec2:/var/www/jamie-wong.com/resume/index.html

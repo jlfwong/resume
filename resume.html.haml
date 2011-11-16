@@ -1,148 +1,151 @@
 !!! Strict
-%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml", :id => 'resume'}
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
     %title Jamie Wong
     %style
       :sass
-        // ------------ Begin Reset -------------
-        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td
-          margin: 0
-          padding: 0
-          
-        table
-          border-collapse: collapse
-          border-spacing: 0
-          
-        fieldset, img
-          border: 0
-          
-        address, caption, cite, code, dfn, th, var
-          font-style: normal
-          font-weight: normal
-          
-        caption, th
-          text-align: left
-
-        h1, h2, h3, h4, h5, h6
-          font-size: 100%
-          font-weight: normal
-          
-        q:before, q:after
-          content: ''
-          
-        abbr, acronym
-          border: 0
-
-        *
-          outline: none
-
-        legend
-          margin: 0
-          padding: 0
-
-        html, body
-          height: 100%
-          
-        a img
-          display: block
-        // -------------  End Reset -------------
-
-        @media print
-          body
-            a
-              border: none
-
-          body
-            h1 
-              color: black
-
-        @media screen
-          .container
-            padding-top: 25px
-            padding-bottom: 25px
-
-        .page_break
-          page-break-before: always
-        
-        body
-          font-family: Garamond, "Times New Roman", serif
-          font-size: 10pt
-        
-        h1
-          font-size: 27pt
-          font-weight: bold
-          color: #777
-
-        .header
-          text-align: center 
-        
-        table
-          margin-left: auto
-          margin-right: auto
-          margin-bottom: 1em
-          border-collapse: collapse
-          border-bottom: 1px groove black
+        #resume
           width: 100%
-          font-size: 10pt 
-          td
-            padding-left: 4px
-            padding-right: 4px
-            width: 30% 
-        
-        td, th
-          &.left
-            text-align: left 
-          &.right 
-            text-align: right 
-          &.center 
+
+          // ------------ Begin Reset -------------
+          body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td
+            margin: 0
+            padding: 0
+
+          table
+            border-collapse: collapse
+            border-spacing: 0
+
+          fieldset, img
+            border: 0
+
+          address, caption, cite, code, dfn, th, var
+            font-style: normal
+            font-weight: normal
+
+          caption, th
+            text-align: left
+
+          h1, h2, h3, h4, h5, h6
+            font-size: 100%
+            font-weight: normal
+
+          q:before, q:after
+            content: ''
+
+          abbr, acronym
+            border: 0
+
+          *
+            outline: none
+
+          legend
+            margin: 0
+            padding: 0
+
+          body
+            height: 100%
+
+          a img
+            display: block
+          // -------------  End Reset -------------
+
+          @media print
+            body
+              a
+                border: none
+
+            body
+              h1 
+                color: black
+
+          @media screen
+            .container
+              padding-top: 25px
+              padding-bottom: 25px
+
+          .page_break
+            page-break-before: always
+
+          body
+            font-family: Garamond, "Times New Roman", serif
+            font-size: 10pt
+
+          h1
+            font-size: 27pt
+            font-weight: bold
+            color: #777
+
+          .header
             text-align: center 
-        
-        th
-          font-weight: bold 
 
-        h2, h3
-          font-weight: bold 
-        
-        h3, h4
-          margin-left: 2em 
+          table
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 1em
+            border-collapse: collapse
+            border-bottom: 1px groove black
+            width: 100%
+            font-size: 10pt 
+            td
+              padding-left: 4px
+              padding-right: 4px
+              width: 30% 
 
-        ul
-          margin-bottom: 1em
+          td, th
+            &.left
+              text-align: left 
+            &.right 
+              text-align: right 
+            &.center 
+              text-align: center 
+
+          th
+            font-weight: bold 
+
+          h2, h3
+            font-weight: bold 
+
+          h3, h4
+            margin-left: 2em 
+
           ul
-            margin-bottom: 0
-        
-        li 
-          margin-left: 5em
+            margin-bottom: 1em
+            ul
+              margin-bottom: 0
+
           li
-            margin-left: 2em
+            margin-left: 5em
+            li
+              margin-left: 2em
 
-        code
-          font-size: 9pt
-        
-        tfoot
-          height: 4pt
+          code
+            font-size: 9pt
 
-        a
-          color: black
-          text-decoration: none
-          border-bottom: 1px #666 dotted
-          &:hover
-            color: #666
-            border-bottom: none
+          tfoot
+            height: 4pt
 
-        .summary p
-          margin: 0 1em 1em 1em
-          margin-bottom: 1em
-          font-size: 10pt
-          text-indent: 2em
-          text-align: justify
+          a
+            color: black
+            text-decoration: none
+            border-bottom: 1px #666 dotted
+            &:hover
+              color: #666
+              border-bottom: none
 
-        .container
-          width: 750px
-          margin: 0 auto
+          .summary p
+            margin: 0 1em 1em 1em
+            margin-bottom: 1em
+            font-size: 10pt
+            text-indent: 2em
+            text-align: justify
 
-  %body
+          .container
+            width: 750px
+            margin: 0 auto
+
+  %body#resume
     .container
       .header
         %h1 Jamie Wong
@@ -189,6 +192,9 @@
       :markdown
         Work Experience
         ---------------
+        ### Frontend Developer at Facebook, September - December 2011
+        #### The real world social network
+          * Tools/Frameworks used: node.js, Jasmine, git
 
         ### Software Developer at [Kontagent][], January - April 2011
         #### Leading social analytics company tracking 600M+ events from 20M+ daily active users, funded by Facebook
@@ -226,7 +232,7 @@
         ### Languages
           * JavaScript (jQuery, Prototype, Backbone.js): 8 months workplace experience, personal projects
             * Learned about `this`, `.prototype` and `apply` making a [jQuery plugin for elegant DOM generation][JSONimal]
-            
+
           * Python (Django): 4 months workplace experience, personal projects, and competition
             * Learned to love docstrings, list comprehensions and pylint making a [2v2 Starcraft 2 Tournament Ladder viewer][SC2 Tournament Manager]
 
@@ -246,7 +252,6 @@
             * Learned to appreciate stack frames making a calculator for a 68k Coldfire board.
 
           * Experienced with Regular Expressions, MySQL, AJAX, JSON, (semantically correct) HTML, and CSS
-          * Current working towards learning Haskell
 
         [JSONimal]: https://github.com/phleet/jsonimal
         [SC2 Tournament Manager]: https://github.com/phleet/sc2_tournament_manager
