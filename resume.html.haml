@@ -3,6 +3,22 @@
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
     %title Jamie Wong
+    %style{:media => "print"}
+      :sass
+        body
+          a
+            border: none !important
+
+        body
+          h1
+            color: black !important
+
+    %style{:media => "screen"}
+      :sass
+        .container
+          padding-top: 25px !important
+          padding-bottom: 25px !important
+
     %style
       :sass
         #resume
@@ -51,20 +67,6 @@
             display: block
           // -------------  End Reset -------------
 
-          @media print
-            body
-              a
-                border: none
-
-            body
-              h1 
-                color: black
-
-          @media screen
-            .container
-              padding-top: 25px
-              padding-bottom: 25px
-
           .page_break
             page-break-before: always
 
@@ -78,7 +80,7 @@
             color: #777
 
           .header
-            text-align: center 
+            text-align: center
 
           table
             margin-left: auto
@@ -87,28 +89,28 @@
             border-collapse: collapse
             border-bottom: 1px groove black
             width: 100%
-            font-size: 10pt 
+            font-size: 10pt
             td
               padding-left: 4px
               padding-right: 4px
-              width: 30% 
+              width: 30%
 
           td, th
             &.left
-              text-align: left 
-            &.right 
-              text-align: right 
-            &.center 
-              text-align: center 
+              text-align: left
+            &.right
+              text-align: right
+            &.center
+              text-align: center
 
           th
-            font-weight: bold 
+            font-weight: bold
 
           h2, h3
-            font-weight: bold 
+            font-weight: bold
 
           h3, h4
-            margin-left: 2em 
+            margin-left: 2em
 
           ul
             margin-bottom: 1em
@@ -183,7 +185,8 @@
           development (untested code is broken code) and code review (unreviewed code is bad code). I have a fascination
           with puzzles and problem solving that both led me to success in national and international competition and
           fostered my passion in programming. When I'm not pushing the latest commits to my projects on [github][], I can be
-          found answering questions on [Stack Overflow], writing up posts for [my blog], or playing badminton.
+          found answering questions on [Stack Overflow], writing up posts for [my blog], editing my vim config, or playing 
+          badminton.
 
           [github]: http://github.com/phleet
           [Stack Overflow]: http://stackoverflow.com/users/303911/jamie-wong
@@ -193,11 +196,11 @@
         Work Experience
         ---------------
         ### Frontend Developer at Facebook, September - December 2011
-        #### The real world social network
+        #### A social network with 500M daily active users
           * Tools/Frameworks used: node.js, Jasmine, git
 
         ### Software Developer at [Kontagent][], January - April 2011
-        #### Leading social analytics company tracking 600M+ events from 20M+ daily active users, funded by Facebook
+        #### Leading social analytics company tracking 600M+ events from 20M+ daily active users
           * Led a self-initiated, large scale refactor effort on the entire customer-facing component of the SaaS product
             with minimal supervision. Identified problem areas, made major architectural changes to existing code,
             destroyed dead and legacy code, and pushed the improved code to production
@@ -230,7 +233,7 @@
         -------------------------
 
         ### Languages
-          * JavaScript (jQuery, Prototype, Backbone.js): 8 months workplace experience, personal projects
+          * JavaScript (jQuery, Prototype, Backbone.js): 1 year workplace experience, personal projects
             * Learned about `this`, `.prototype` and `apply` making a [jQuery plugin for elegant DOM generation][JSONimal]
 
           * Python (Django): 4 months workplace experience, personal projects, and competition
@@ -258,11 +261,6 @@
         [Propositional Logic Parser]: https://github.com/phleet/Propositional-Logic-Parser
         [Campus Perks]: http://campusperks.ca
         [UWANgel-CLI]: https://github.com/phleet/UWAngel-CLI/tree/master/php
-
-        ### Tools and Software
-          * Editing: predominately Vim, experience with Dev C++, Eclipse, SciTE
-          * Source Control: git, svn
-          * Build Systems: GNU make, rake
 
       .page_break
 
