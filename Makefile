@@ -1,4 +1,7 @@
-all: resume.html
+.PHONY: open
+
+open: resume.html
+	open $<
 
 resume.html: resume.html.haml
 	echo "<!-- WARNING: THIS FILE IS GENERATED -->" > $@
