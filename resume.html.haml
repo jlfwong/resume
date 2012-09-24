@@ -21,7 +21,9 @@
 
     %style
       :sass
-        #resume
+        // Because Jobmine smashes all your HTML together, if you don't scope
+        // the styles, it'll mess with your transcript and work term reviews
+        #jlfwong-container
           width: 100%
 
           // ------------ Begin Reset -------------
@@ -67,12 +69,13 @@
             display: block
           // -------------  End Reset -------------
 
+          width: 750px
+          margin: 0 auto
+          font-family: Garamond, "Times New Roman", serif
+          font-size: 10pt
+
           .page_break
             page-break-before: always
-
-          body
-            font-family: Garamond, "Times New Roman", serif
-            font-size: 10pt
 
           h1
             font-size: 27pt
@@ -143,12 +146,8 @@
             text-indent: 2em
             text-align: justify
 
-          .container
-            width: 750px
-            margin: 0 auto
-
-  %body#resume
-    .container
+  %body
+    #jlfwong-container
       .header
         %h1 Jamie Wong
 
