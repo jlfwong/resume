@@ -174,15 +174,15 @@
 
       .summary
         :markdown
-          I like to build things. Coding personal projects since the 7th grade
-          has given me a great appreciation for perpetual self-learning through
-          doing. I'm a huge advocate of open source, test driven development
-          (untested code is broken code) and code review (unreviewed code is bad
-          code). I have a fascination with puzzles and problem solving that both
-          led me to success in national and international competition and
-          fostered my passion in programming.  When I'm not pushing code, I can
-          be found ranting on [my blog][], editing my [vim config][], or getting
-          stomped in badminton.
+          Hi! I want to pursue challenges that require a more mathematical or
+          scientific background than my past full-stack web development
+          endeavours might suggest. I'd like reading papers or textbooks to be
+          a part of my job, and for that reading to be necessary to do my job
+          well.  I'm an advocate of extensive automated testing (untested code
+          is unmaintainable code) and code review (unreviewed code is
+          incomprehensible code).  I've started and contributed to popular open
+          source projects here and there, and written about my work on both
+          company engineering blogs and my own personal blog.
 
           [my blog]: http://jamie-wong.com
           [vim config]: https://github.com/jlfwong/dotfiles
@@ -191,149 +191,144 @@
       :markdown
         Work Experience
         ---------------
-        ### Software Developer and Traveler at [Khan Academy][], September - December 2013 (Remote)
-          * Built clientside JavaScript test infrastructure integratable into CI based on Mocha
+        ### Software Developer in Infrastructure at [Khan Academy][], June 2014 - March 2016
+          * Member of team of 4 engineers optimizing user-perceived site performance (4 months)
+            * Reduced time to visually complete for all critical content pages by > 50%
+            * Video page visually complete time reduced to 3s from 7s on a US DSL connection
+            * Focused on optimizations that applied well to India and other countries 
+              with similarly low bandwidth conditions
+            * Designed, co-authored implementation, and deployed server-side rendering service
+              handling ~100QPS at peak traffic
+          * Led engineering team of 4 to construct and launch [translator portal][] (3 months)
+            * Used by teams around the world to monitor translation progress and stay
+              focused on the most critical translation tasks, later leveraged to [launch Khan Academy in Hindi][]
+            * Acted as primary contact with third-party service Crowdin's CEO and technical staff
+              to secure bug fixes and feature development on their side necessary for our project's
+              success
+          * Worked with one other engineer to fix category of data loss caused by incorrect transaction usage (6 weeks)
+            * Built a distributed locking mechanism to prevent lost datastore writes ([see blog post][blog1])
+            * Monkey-patched Google AppEngine datastore libraries to provide runtime assertions
+              of transactional safety ([see blog post][blog2])
+          * Mentored intern for 4 months, helping her reduce the duration of deploys
+          * Interviewed ~20 candidates for devops and software engineering positions
+
+        [blog1]: http://engineering.khanacademy.org/posts/user-write-lock.htm
+        [blog2]: http://engineering.khanacademy.org/posts/transaction-safety.htm
+        [translator portal]: https://www.khanacademy.org/translations
+        [launch Khan Academy in Hindi]: https://www.khanacademy.org/about/blog/post/134448779971/khan-academy-in-hindi
+        [speeding up our deploys]: http://engineering.khanacademy.org/posts/translation-server.htm
+
+        ### Software Developer Intern and Backpacker at [Khan Academy][], September - December 2013 (Remote)
           * Introduced a custom CommonJS-esque module system now deployed throughout the entire website
-          * Visited ~14 countries, mostly in Western Europe, working out of hostels and Starbucks
+          * Built clientside JavaScript test infrastructure integratable into CI based on Mocha
+          * Visited ~14 countries, mostly in Western Europe, working out of hostels and cafes
 
         ### Security Engineer Intern at [Square][], January - April 2013
-          * Worked on file-based secret management and distribution system deployed on all Square servers
-          * Deployed applications into high availability, redundant environments
-          * Created dashboard to track expiration of critical SSL certificates
-          * Learned the horrors of crypto APIs
-          * Tools/Frameworks used: Java, IntelliJ, HAproxy, openssl, BouncyCastle
+          * Worked on [Keywhiz][], a file-based secret management and distribution system (written in Java) deployed on all Square servers
+          * Deployed applications into high availability environments with HAproxy
+          * Created dashboard to track expiration of critical SSL certificates, likely preventing a few payment-blocking outages
 
+        [Keywhiz]: https://square.github.io/keywhiz/
         [Square]: http://square.com/
 
-        ### Software Developer at [Khan Academy][], May - August 2012 (Remote)
+        ### Software Developer Intern at [Khan Academy][], May - August 2012 (Remote)
           * Worked with [John Resig][] to build and launch the [Khan Academy Computer Science][] platform, used by more than 100,000 users
-          * Had full ownership and responsibility over building the Python backend
-          * Contributed heavily to client-side functionality and layout for the in-browser programming environment
-          * Worked to improve tools and infrastructure, and fix security issues throughout the site
-          * Made open source contributions to [Phabricator][], and open sourced two of my own vim plugins
-          * Tools/Frameworks used: Google App Engine, jQuery, Backbone.js, Mercurial, git
+          * Had full ownership over building the Google App Engine backend, contributed to in-browser programming environment
 
         [Khan Academy Computer Science]: http://khanacademy.org/cs
         [John Resig]: http://ejohn.org/
         [Phabricator]: http://phabricator.org/
         [Khan Academy]: http://www.khanacademy.org/
 
-        ### Frontend Developer at Facebook, September - December 2011
-        #### A social network with 500M daily active users
-          * Worked on early prototypes of Facebook Home, devtools, JS test infrastructure
-          * Tools/Frameworks used: node.js, Jasmine, git
+        ### Frontend Developer Intern at Facebook, September - December 2011
+          * Worked on early prototypes of Facebook Home, devtools, JavaScript test infrastructure
 
-        ### Software Developer at [Kontagent][], January - April 2011
-        #### Leading social analytics company tracking 600M+ events from 20M+ daily active users
-          * Led a self-initiated, large scale refactor effort on the entire customer-facing component of the SaaS product
-            with minimal supervision. Identified problem areas, made major architectural changes to existing code,
-            destroyed dead and legacy code, and pushed the improved code to production
-          * Authored baseline company-wide engineering documentation, JavaScript and Python style guides and best practices
-          * Improved python test coverage from 0% to 40% for the large portions of the code base I was responsible for
-          * Developed a tool to dramatically increase support staff efficiency by providing rapid access to the customer's view
-          * Tools/Frameworks used: Django 1.1 and 1.2, jQuery, HTML, CSS, svn
+        ### Earlier experience at places you probably haven't heard of
+          * Software Developer Intern at [Kontagent][] (now Upsight), January - April 2011
+          * Web Developer Intern at [The Working Group][], May - August 2010
+          * Camp Instructor at [Virtual Ventures Science & Technology Summer Camp][], Summers of 2007-2009
 
-        [Kontagent]: http://kontagent.com
-
-        ### Web Developer at [The Working Group][], May - August 2010
-        #### Ruby on Rails web development shop with a focus on entrepreneurship and agile development practices.
-          * Project lead on Campus Perks' web-based contest system, which received over 500,000 page views. Used by RIM, Microsoft, Loblaws and others to create integrated social media campaigns - see [campusperks.ca][Campus Perks]
-          * Interacted directly with clients, obtaining specification and recommending improvements
-          * Tools/Frameworks used: Rails 2.x and 3.0, jQuery, Prototype, HTML (haml), CSS (sass), git, svn
-
-        [Campus Perks]: http://campusperks.ca/
-        [The Working Group]: http://twg.ca
-
-        ### Camp Instructor at [Virtual Ventures Summer Camp][], Summers of 2007-2009
-        #### Summer camp focussing on developing interest in science and technology
-          * Designed original lesson plans to educate campers aged 10-15 about graphic design, computer science and information security
-          * Taught groups of up to 40 campers about HTML, CSS and webpage creation through SSH and SCP
-          * Created AJAX powered camper sign in/out system used by camp instructors throughout summer 2009
-
-        [Virtual Ventures Summer Camp]: http://virtualventures.ca
+        [Kontagent]: http://www.upsight.com/
+        [The Working Group]: https://twg.io/
+        [Virtual Ventures Science & Technology Summer Camp]: http://carleton.ca/vv/
 
       .page_break
 
       :markdown
 
+        Sample of Open Source Contributions
+        -----------------------------------
+        ### [Khan/aphrodite][] (co-author)
+          * A performance-focused tool for writing CSS in JavaScript, built for React ([see blog post][blog3])
+          * &gt; 300 downloads a day via npm, > 1000 stars on GitHub
+
+        ### [jlfwong/chrome2calltree][] (author)
+          * Converts CPU profiles exported from Chrome to callgrind format
+          * &gt; 300 stars on GitHub
+
+        ### [mozilla/source-map][] (contributor)
+          * Contributed patch for consuming [indexed source maps][] for
+            source-to-source debugging as part of work for Khan Academy
+          * +1KLOC, -400LOC change to unfamiliar codebase
+
+        [mozilla/source-map]: https://github.com/mozilla/source-map/pull/127
+        [Khan/aphrodite]: https://github.com/Khan/aphrodite
+        [jlfwong/chrome2calltree]: https://github.com/jlfwong/chrome2calltree
+        [blog3]: http://engineering.khanacademy.org/posts/aphrodite-inline-css.htm
+        [chrome2calltree]: https://github.com/jlfwong/chrome2calltree
+        [indexed source maps]: https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit#heading=h.535es3xeprgt
+
+      :markdown
+
         Other Technical Experience
         --------------------------
-        ### [uwflow.com][] - Course Planning Platform That Doesn't Suck
-          * Course planning and student utility site for University of Waterloo students
-          * Over 4400 registered users, more than 15% of the undergraduate population
-          * Over 330,000 page views, 48,000 unique visitors
-          * Built initial prototypes of schedule sharing, per-section information
-          * Warden of devtools (test infrastructure, linting, a better REPL)
-          * Tools/Frameworks used: Python, MongoDB, Flask, JavaScript, RequireJS, git
-
-        [uwflow.com]: http://uwflow.com
-
         ### [jamie-wong.com][blog] - Personal Technical Blog
-          * Blog about software development, currently consisting of more than 30 posts
-          * Over 100,000 unique visitors
+          * Over 150,000 unique visitors
           * Highest traffic post, "[The Grep Test][]", received > 30,000 visits over two days
 
-        [The Grep Test]: http://jamie-wong.com/2012/08/22/what-i-did-at-khan-academy/
+        [The Grep Test]: http://jamie-wong.com/2013/07/12/grep-test/
         [blog]: http://jamie-wong.com/
 
         ### Competitive Algorithmic Programmer
           * ACM ICPC competitor, 13th place finish out of 113 teams in East Central North America
           * Facebook Hacker Cup Online Round 2 Qualifier, 2011, 2013
-          * Google Code Jam Online Round 2 Qualifier, 2009, 2010, and 2012 (username: phleet)
+          * Google Code Jam Online Round 2 Qualifier, 2009, 2010, 2012, 2013, 2016
           * National Bronze Medallist, Canadian Computing Contest, University of Waterloo, February 2009
 
         ### Stack Overflow Contributor
         #### [stackoverflow.com][stack overflow] (username: Jamie Wong), March 29, 2010 - Present
-          * Over 9,500 reputation, 200 answers
+          * Over 12,000 reputation, 240 answers
 
         [stack overflow]: http://stackoverflow.com/users/303911/jamie-wong
-        Summary of Qualifications
-        -------------------------
 
-        ### Languages and Associated Projects
-          * JavaScript
-            * Abused `this`, `.prototype` and `apply` making [a map of everywhere my family has ever been][travelmap]
-
-          * Python
-            * Tried to make things go faster making a [line-by-line profiler for flask][lineprofilerpanel]
-
-          * CoffeeScript
-            * Questioned the concept of optional parens making [a fifteen puzzle solver][fifteen-puzzle]
-
-          * Scala
-            * Loving immutability and pattern matching building a compiler for a subset of Java
-
-          * Ruby
-            * Learned to love haml and sass while building a contest platform for [Campus Perks][]
-
-          * Java
-            * Got really mad at Guice for giving me runtime errors while working on Square's secret distribution service
-
-          * php
-            * Had code reviewed by the hilarious Evan Priestley while improving [hg support in Phabricator][arcanist]
-
-          * VimL
-            * Learned about the crazy `a:`, `b:`, `s:` scoping system writing an [hg plugin for vim][vim-mercenary]
-
-          * C++
-            * Got worked up about overriding non-virtual functions building a [raytracer][].
-
-          * C99
-            * Cried over segfaults while building an OS to run on an ARM processor
-
-        [travelmap]: https://github.com/jlfwong/travelmap
-        [lineprofilerpanel]: https://github.com/jlfwong/flask_debugtoolbar_lineprofilerpanel
-        [fifteen-puzzle]: https://github.com/jlfwong/fifteen-puzzle
-        [Campus Perks]: http://campusperks.ca
-        [arcanist]: https://github.com/facebook/arcanist/commits?author=jlfwong
-        [vim-mercenary]: https://github.com/jlfwong/vim-mercenary
-        [raytracer]: http://jamie-wong.com/experiments/raytracer/
+        ### Languages
+          * Extensive experience in Python, JavaScript
+          * Working knowledge of Scala, Ruby, Java, C++, C
+          * Reluctant knowledge of VimL and php
+          * Would love to develop knowledge in Rust, Go, or OCaml
 
         Education
         ---------
 
-        ### Candidate for Bachelor of Software Engineering
-          * Honours Software Engineering, [University of Waterloo][uw], Ontario, September 2009 - Present
-          * Major Average: 95%
+        ### Bachelor of Software Engineering, Co-operative Program, Dean's Honours List
+          * Honours Software Engineering, [University of Waterloo][uw], Ontario, September 2009 - June 2014
+          * Major Average: 94%
 
+        ### Interesting Coursework
+          * Built a [raytracer][] in C++, implementing vertex normal
+            interpolation, Fresnel reflection, refraction, texture mapping, and
+            depth-of-field for CS488
+          * Wrote an operating system in C to run on an ARM processor,
+            including a basic memory allocator, a co-operative scheduler, and
+            interrupt handlers for SE350
+          * Wrote a compiler in Scala targeting x86 for a large subset of Java,
+            including a DFA-driven lexer, SLR parser, type checking, and code
+            generation for CS444
+
+        [raytracer]: http://jamie-wong.com/experiments/raytracer/
         [uw]: https://uwaterloo.ca/
+
+        Other Interests
+        ---------------
+
+        #### Badminton, house dance, popping
