@@ -3,148 +3,143 @@
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
     %title Jamie Wong
-    %style{:media => "print"}
-      :sass
-        body
-          a
-            border: none !important
+    :sass
+      body
+        a
+          border: none !important
+
+      body
+        h1
+          color: black !important
+
+      .container
+        padding-top: 25px !important
+        padding-bottom: 25px !important
+
+      // Because Jobmine smashes all your HTML together, if you don't scope
+      // the styles, it'll mess with your transcript and work term reviews
+      #jlfwong-container
+        width: 100%
+
+        // ------------ Begin Reset -------------
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td
+          margin: 0
+          padding: 0
+
+        table
+          border-collapse: collapse
+          border-spacing: 0
+
+        fieldset, img
+          border: 0
+
+        address, caption, cite, code, dfn, th, var
+          font-style: normal
+          font-weight: normal
+
+        caption, th
+          text-align: left
+
+        h1, h2, h3, h4, h5, h6
+          font-size: 100%
+          font-weight: normal
+
+        q:before, q:after
+          content: ''
+
+        abbr, acronym
+          border: 0
+
+        *
+          outline: none
+
+        legend
+          margin: 0
+          padding: 0
 
         body
-          h1
-            color: black !important
+          height: 100%
 
-    %style{:media => "screen"}
-      :sass
-        .container
-          padding-top: 25px !important
-          padding-bottom: 25px !important
+        a img
+          display: block
+        // -------------  End Reset -------------
 
-    %style
-      :sass
-        // Because Jobmine smashes all your HTML together, if you don't scope
-        // the styles, it'll mess with your transcript and work term reviews
-        #jlfwong-container
+        width: 750px
+        margin: 0 auto
+        font-family: Garamond, "Times New Roman", serif
+        font-size: 10pt
+
+        .page_break
+          page-break-before: always
+
+        h1
+          font-size: 27pt
+          font-weight: bold
+          color: #777
+
+        .header
+          text-align: center
+
+        table
+          margin-left: auto
+          margin-right: auto
+          margin-bottom: 1em
+          border-collapse: collapse
+          border-bottom: 1px groove black
           width: 100%
-
-          // ------------ Begin Reset -------------
-          body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td
-            margin: 0
-            padding: 0
-
-          table
-            border-collapse: collapse
-            border-spacing: 0
-
-          fieldset, img
-            border: 0
-
-          address, caption, cite, code, dfn, th, var
-            font-style: normal
-            font-weight: normal
-
-          caption, th
-            text-align: left
-
-          h1, h2, h3, h4, h5, h6
-            font-size: 100%
-            font-weight: normal
-
-          q:before, q:after
-            content: ''
-
-          abbr, acronym
-            border: 0
-
-          *
-            outline: none
-
-          legend
-            margin: 0
-            padding: 0
-
-          body
-            height: 100%
-
-          a img
-            display: block
-          // -------------  End Reset -------------
-
-          width: 750px
-          margin: 0 auto
-          font-family: Garamond, "Times New Roman", serif
           font-size: 10pt
+          td
+            padding-left: 4px
+            padding-right: 4px
+            width: 30%
 
-          .page_break
-            page-break-before: always
-
-          h1
-            font-size: 27pt
-            font-weight: bold
-            color: #777
-
-          .header
+        td, th
+          &.left
+            text-align: left
+          &.right
+            text-align: right
+          &.center
             text-align: center
 
-          table
-            margin-left: auto
-            margin-right: auto
-            margin-bottom: 1em
-            border-collapse: collapse
-            border-bottom: 1px groove black
-            width: 100%
-            font-size: 10pt
-            td
-              padding-left: 4px
-              padding-right: 4px
-              width: 30%
+        th
+          font-weight: bold
 
-          td, th
-            &.left
-              text-align: left
-            &.right
-              text-align: right
-            &.center
-              text-align: center
+        h2, h3
+          font-weight: bold
 
-          th
-            font-weight: bold
+        h3, h4
+          margin-left: 2em
 
-          h2, h3
-            font-weight: bold
+        ul
+          margin-bottom: 1em
+          ul
+            margin-bottom: 0
 
-          h3, h4
+        li
+          margin-left: 5em
+          li
             margin-left: 2em
 
-          ul
-            margin-bottom: 1em
-            ul
-              margin-bottom: 0
+        code
+          font-size: 9pt
 
-          li
-            margin-left: 5em
-            li
-              margin-left: 2em
+        tfoot
+          height: 4pt
 
-          code
-            font-size: 9pt
+        a
+          color: black
+          text-decoration: none
+          border-bottom: 1px #666 dotted
+          &:hover
+            color: #666
+            border-bottom: none
 
-          tfoot
-            height: 4pt
-
-          a
-            color: black
-            text-decoration: none
-            border-bottom: 1px #666 dotted
-            &:hover
-              color: #666
-              border-bottom: none
-
-          .summary p
-            margin: 0 1em 1em 1em
-            margin-bottom: 1em
-            font-size: 10pt
-            text-indent: 2em
-            text-align: justify
+        .summary p
+          margin: 0 1em 1em 1em
+          margin-bottom: 1em
+          font-size: 10pt
+          text-indent: 2em
+          text-align: justify
 
   %body
     #jlfwong-container
@@ -160,42 +155,40 @@
         %tfoot
           -# Spacer
           %tr
-            %td{:colspan => 3} 
+            %td{:colspan => 3}
               &nbsp;
         %tbody
           %tr
             %td.left
               %a{:href => 'http://github.com/jlfwong'}
                 github.com/jlfwong
-            %td.center 
+            %td.center
               %a{:href => 'http://www.jamie-wong.com'}
                 www.jamie-wong.com
             %td.right jamie.lf.wong@gmail.com
 
-      .summary
-        :markdown
-          Hi! I want to pursue challenges that require a more mathematical or
-          scientific background than my past full-stack web development
-          endeavours might suggest. I'd like reading papers or textbooks to be
-          a part of my job, and for that reading to be necessary to do my job
-          well.  I'm an advocate of extensive automated testing (untested code
-          is unmaintainable code) and code review (unreviewed code is
-          incomprehensible code).  I've started and contributed to popular open
-          source projects here and there, and written about my work on both
-          company engineering blogs and my own personal blog.
-
-          [my blog]: http://jamie-wong.com
-          [vim config]: https://github.com/jlfwong/dotfiles
-          [Stack Overflow]: http://stackoverflow.com/users/303911/jamie-wong
-
       :markdown
         Work Experience
         ---------------
-        ### Software Developer in Infrastructure at [Khan Academy][], June 2014 - March 2016
+        ### Software Engineer at [Figma][], September 2016 - Present
+          * Worked with CTO to re-write our WebGL-based C++ document renderer to make zooming and dragging [up to 3x faster][Figma, Faster].
+          * Implemented [developer handoff capabilities in Figma], performing user research, discussing
+            with a designer, and writing code generation in C++ targeting CSS for web, Swift for iOS, and Java for Android.
+          * Designed and implemented test infrastructure in C++ & TypeScript for the document editor with record & playback functionality
+            to facilitate integration-level testing of large portions of the editor that were previously impractical to test.
+          * Worked with CTO to re-write our JavaScript build system in TypeScript to move from > 15s cold restarts to < 1s, resolving
+            an internal painpoint for engineers on our team.
+          * Mentored intern for 8 months, working with her to unblock a critical use-case for UI component re-use for our customers.
+
+        [developer handoff capabilities in Figma]: https://help.figma.com/editor/developer-handoff
+        [Figma, Faster]: https://blog.figma.com/figma-faster-d1947f9c26ca
+        [Figma]: http://www.figma.com/
+
+        ### Software Engineer in Infrastructure at [Khan Academy][], June 2014 - March 2016
           * Member of team of 4 engineers optimizing user-perceived site performance (4 months)
             * Reduced time to visually complete for all critical content pages by > 50%
             * Video page visually complete time reduced to 3s from 7s on a US DSL connection
-            * Focused on optimizations that applied well to India and other countries 
+            * Focused on optimizations that applied well to India and other countries
               with similarly low bandwidth conditions
             * Designed, co-authored implementation, and deployed server-side rendering service
               handling ~100QPS at peak traffic
@@ -206,9 +199,9 @@
               to secure bug fixes and feature development on their side necessary for our project's
               success
           * Worked with one other engineer to fix category of data loss caused by incorrect transaction usage (6 weeks)
-            * Built a distributed locking mechanism to prevent lost datastore writes ([see blog post][blog1])
-            * Monkey-patched Google AppEngine datastore libraries to provide runtime assertions
-              of transactional safety ([see blog post][blog2])
+            * [Built a distributed locking mechanism to prevent lost datastore writes][blog1]
+            * [Monkey-patched Google AppEngine datastore libraries to provide runtime assertions
+              of transactional safety][blog2]
           * Mentored intern for 4 months, helping her reduce the duration of deploys
           * Interviewed ~20 candidates for devops and software engineering positions
 
@@ -221,7 +214,6 @@
         ### Software Developer Intern and Backpacker at [Khan Academy][], September - December 2013 (Remote)
           * Introduced a custom CommonJS-esque module system now deployed throughout the entire website
           * Built clientside JavaScript test infrastructure integratable into CI based on Mocha
-          * Visited ~14 countries, mostly in Western Europe, working out of hostels and cafes
 
         ### Security Engineer Intern at [Square][], January - April 2013
           * Worked on [Keywhiz][], a file-based secret management and distribution system (written in Java) deployed on all Square servers
@@ -243,7 +235,7 @@
         ### Frontend Developer Intern at Facebook, September - December 2011
           * Worked on early prototypes of Facebook Home, devtools, JavaScript test infrastructure
 
-        ### Earlier experience at places you probably haven't heard of
+        ### Earlier experience
           * Software Developer Intern at [Kontagent][] (now Upsight), January - April 2011
           * Web Developer Intern at [The Working Group][], May - August 2010
           * Camp Instructor at [Virtual Ventures Science & Technology Summer Camp][], Summers of 2007-2009
@@ -258,13 +250,14 @@
 
         Sample of Open Source Contributions
         -----------------------------------
-        ### [Khan/aphrodite][] (co-author)
-          * A performance-focused tool for writing CSS in JavaScript, built for React ([see blog post][blog3])
-          * &gt; 300 downloads a day via npm, > 1000 stars on GitHub
+        ### [jlfwong/speedscope][] (primary author)
+          * GPU-accelerated in-browser flamegraph viewer supporting import from JavaScript, Ruby, Haskell, and native code
+          * > 10 KLOC TypeScript & GLSL codebase
+          * &gt; 600 stars on GitHub
 
-        ### [jlfwong/chrome2calltree][] (author)
-          * Converts CPU profiles exported from Chrome to callgrind format
-          * &gt; 300 stars on GitHub
+        ### [Khan/aphrodite][] (co-author)
+          * [A performance-focused tool for writing CSS in JavaScript, built for React][blog3]
+          * &gt; 400,000 downloads per month via npm, &gt; 4000 stars on GitHub
 
         ### [mozilla/source-map][] (contributor)
           * Contributed patch for consuming [indexed source maps][] for
@@ -273,7 +266,7 @@
 
         [mozilla/source-map]: https://github.com/mozilla/source-map/pull/127
         [Khan/aphrodite]: https://github.com/Khan/aphrodite
-        [jlfwong/chrome2calltree]: https://github.com/jlfwong/chrome2calltree
+        [jlfwong/speedscope]: https://github.com/jlfwong/speedscope
         [blog3]: http://engineering.khanacademy.org/posts/aphrodite-inline-css.htm
         [chrome2calltree]: https://github.com/jlfwong/chrome2calltree
         [indexed source maps]: https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit#heading=h.535es3xeprgt
@@ -283,11 +276,12 @@
         Other Technical Experience
         --------------------------
         ### [jamie-wong.com][blog] - Personal Technical Blog
-          * Over 150,000 unique visitors
-          * Highest traffic post, "[The Grep Test][]", received > 30,000 visits over two days
+          * Two highest traffic posts, "[Color: From Hexcodes to Eyeballs][]" and "[Ray Marching and Signed Distance Functions][]"
+            have each received > 50,000 page views to date.
 
-        [The Grep Test]: http://jamie-wong.com/2013/07/12/grep-test/
         [blog]: http://jamie-wong.com/
+        [Color: From Hexcodes to Eyeballs]: http://jamie-wong.com/post/color/
+        [Ray Marching and Signed Distance Functions]: http://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/
 
         ### Competitive Algorithmic Programmer
           * ACM ICPC competitor, 13th place finish out of 113 teams in East Central North America
@@ -302,10 +296,7 @@
         [stack overflow]: http://stackoverflow.com/users/303911/jamie-wong
 
         ### Languages
-          * Extensive experience in Python, JavaScript
-          * Working knowledge of Scala, Ruby, Java, C++, C
-          * Reluctant knowledge of VimL and php
-          * Would love to develop knowledge in Rust, Go, or OCaml
+          * Extensive experience in C++, TypeScript, Python, JavaScript
 
         Education
         ---------
@@ -327,8 +318,3 @@
 
         [raytracer]: http://jamie-wong.com/experiments/raytracer/
         [uw]: https://uwaterloo.ca/
-
-        Other Interests
-        ---------------
-
-        #### Badminton, house dance, popping
